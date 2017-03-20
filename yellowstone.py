@@ -134,17 +134,7 @@ def main(argv):
     dates = [9, 10, 11, 12, 13]
     month = 8
     hotel_available = check_hotel(hotels, dates, month=month)
-    '''
-    hotel_available = {'Arriving Aug. 09, 2017 - Departing Aug. 10, 2017':
-                           ['Lake Hotel Premium Room 1 Queen          :    $392.00\n',
-                            'Lake Hotel Superior Room 1 Queen         :    $418.00\n'],
-                       'Arriving Aug. 10, 2017 - Departing Aug. 11, 2017':
-                            ['Lake Hotel Premium Room 1 Queen          :    $392.00\n',
-                             'Lake Hotel Superior Room 1 Queen         :    $418.00\n',
-                             'Lake Hotel Superior Room 1 King          :    $438.00\n',
-                             'Lake Hotel Sandpiper Lodge 1 Queen       :    $244.00\n']
-                       }
-    '''
+
     result = process_text_body(hotel_available)
     if email:
         send_email(argv[0], argv[1], recipients, result)
