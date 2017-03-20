@@ -85,7 +85,7 @@ def process_text_body(hotel_list):
         text += "\n\n\n=========== " + date + " ===========\n\n"
         for opt in hotel:
             text += opt
-    text += '\n\nbooking here:' + website
+    text += '\n\nbook here:' + website
     return text
 
 
